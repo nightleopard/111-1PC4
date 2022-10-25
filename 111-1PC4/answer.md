@@ -1,12 +1,12 @@
 ﻿# 第4次練習-練習-PC4
 >
->學號：1234567 
+>學號：109111117 
 ><br />
->姓名：王小明 
+>姓名：潘耿劭 
 ><br />
->作業撰寫時間：180 (mins，包含程式撰寫時間)
+>作業撰寫時間：60 (mins，包含程式撰寫時間)
 ><br />
->最後撰寫文件日期：2022/10/12
+>最後撰寫文件日期：2022/10/26
 >
 
 本份文件包含以下主題：(至少需下面兩項，若是有多者可以自行新增)
@@ -15,17 +15,88 @@
 
 ## 說明程式與內容
 
-開始寫說明，該說明需說明想法，
-並於之後再對上述想法的每一部分將程式進一步進行展現，
-若需引用程式區則使用下面方法，
-若為.cs檔內程式除了於敘述中需註明檔案名稱外，
-還需使用語法` ```csharp 程式碼 ``` `，
-下段程式碼則為使用後結果：
+
 
 ```csharp
-public void mt_getResult(){
-    ...
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace _111_1PC4
+{
+    public partial class Test : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            int i_Age = 49;
+            int i_Sex = 0;
+            if (i_Age >= 50)
+            {
+                if (i_Sex == 1)
+                {
+                    Response.Write("壯年男子的程式執行程式碼區域")
+                }
+                else
+                {
+                    Response.Write("壯年女子的程式執行程式碼區域")
+                }
+            }
+            else
+            {
+                if (i_Sex == 1)
+                {
+                    Response.Write("年輕男子的程式執行程式碼區域")
+                }
+                else
+                {
+                    Response.Write("年輕女子的程式執行程式碼區域")
+                }
+            }
+        }
+    }
 }
+```
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace _111_1PC4
+{
+    public partial class Test2 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            int i_Age >= 49; int i_Sex == 1;
+            if (!(!(i_Age >= 50)!(i_Sex == 1)))
+            {
+                Response.Write("壯年男子的程式執行程式碼區域")
+            }
+            else if (!(!(i_Age < 50)!(i_Sex == 1)))
+            {
+                Response.Write("年輕男子的程式執行程式碼區域")
+            }
+            else if (!(!(i_Age >= 50)!(i_Sex == 0)))
+            {
+                Response.Write("壯年女子的程式執行程式碼區域")
+            }
+            else if (!(!(i_Age < 50)!(i_Sex == 1)))
+            {
+                Response.Write("壯年女子的程式執行程式碼區域")
+            }
+            else
+            {
+                Response.Write("其他")
+            }
+        }
+    }
 ```
 
 若要於內文中標示部分.aspx檔，則使用以下標籤` ```html 程式碼 ``` `，
